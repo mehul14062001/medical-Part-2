@@ -28,7 +28,11 @@ app.post('/flask', function (req, res) {
     request({ method: "post", url: 'http://0.0.0.0:5000/predict', json: req.body }, function (error, response, body) {
         console.log('body:', body);
     }).pipe(
-        fs.createWriteStream(x));
+        fs.createWriteStream(x)).on('close', function (message) {
+            res.send("Done")
+        });
+
+
 });
 
 

@@ -221,7 +221,7 @@ const AddPatient = ({ navigation, route }) => {
 
 
     const submitData = () => {
-        fetch("http://bb09-2409-4070-450e-68b2-f52d-c066-1b10-47da.ngrok.io/create", {
+        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/create", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -341,7 +341,7 @@ const AddPatient = ({ navigation, route }) => {
     }
 
     const updateData = () => {
-        fetch("http://bb09-2409-4070-450e-68b2-f52d-c066-1b10-47da.ngrok.io/update", {
+        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/update", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -524,11 +524,16 @@ const AddPatient = ({ navigation, route }) => {
                                 label="Female"
                                 value="Female" />
                         </RadioButton.Group>
+                        <Button onPress={() => setGender("")}>
+                            <Text>
+                                Clear Choice
+                            </Text>
+                        </Button>
                     </View>
                 </View>
                 <View style={styles.buttons}>
                     <Text style={{ fontSize: 20, textAlign: "center" }}>
-                        External
+                        Externals
                     </Text>
                     <CollapsibleList
                         numberOfVisibleItems={0}
@@ -548,6 +553,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedHouseDust("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Cotton Dust</Text>
@@ -563,6 +573,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCottonDust("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Aspergilus</Text>
@@ -578,6 +593,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedAspergilus("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Pollen</Text>
@@ -593,6 +613,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPollen("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Parthenium</Text>
@@ -608,6 +633,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedParthenium("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Cockroach</Text>
@@ -623,6 +653,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCockroach("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Catdander</Text>
@@ -638,6 +673,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCatdander("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Dosfur</Text>
@@ -653,6 +693,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedDosfur("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Road Dust</Text>
@@ -668,6 +713,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedRoadDust("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Old Dust</Text>
@@ -683,6 +733,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedOldDust("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>PS Dust</Text>
@@ -698,6 +753,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPSDust("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                     </CollapsibleList>
                 </View>
@@ -723,6 +783,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMilkP("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>MilkC</Text>
@@ -738,6 +803,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMilkC("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Curd</Text>
@@ -753,6 +823,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCurd("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Coffee</Text>
@@ -768,6 +843,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCoffee("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Tea</Text>
@@ -783,6 +863,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedTea("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Beef</Text>
@@ -798,6 +883,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedBeef("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Chicken</Text>
@@ -813,6 +903,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedChicken("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Mutton</Text>
@@ -828,6 +923,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMutton("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Egg</Text>
@@ -843,6 +943,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedEgg("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>FishA</Text>
@@ -858,6 +963,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedFishA("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>FishB</Text>
@@ -873,6 +983,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedFishB("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Crabs</Text>
@@ -903,6 +1018,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPrawns("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Shark</Text>
@@ -918,6 +1038,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedShark("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                     </CollapsibleList>
                 </View>
@@ -943,6 +1068,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedAvaraikai("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Banana</Text>
@@ -958,6 +1088,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedBanana("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Beans</Text>
@@ -973,6 +1108,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedBeans("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Beetroot</Text>
@@ -988,6 +1128,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedBeetroot("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Brinjal</Text>
@@ -1003,6 +1148,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedBrinjal("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Cabbage</Text>
@@ -1018,6 +1168,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCabbage("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Capsicum</Text>
@@ -1033,6 +1188,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCapsicum("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Chillie</Text>
@@ -1048,6 +1208,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedChillie("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Cauliflower</Text>
@@ -1063,6 +1228,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCauliflower("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Carrot</Text>
@@ -1078,6 +1248,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCarrot("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Chow Chow</Text>
@@ -1093,6 +1268,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedChowchow("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Corn</Text>
@@ -1108,6 +1288,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCorn("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Cucumber</Text>
@@ -1123,6 +1308,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCucumber("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Drumstick</Text>
@@ -1138,6 +1328,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedDrumstick("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Greens</Text>
@@ -1153,6 +1348,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedGreens("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Gourds</Text>
@@ -1168,6 +1368,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedGourds("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Kovaikai</Text>
@@ -1183,6 +1388,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedKovaikai("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Kothavarai</Text>
@@ -1198,6 +1408,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedKothavarai("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Ladies Finger</Text>
@@ -1213,6 +1428,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedLfinger("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Malli</Text>
@@ -1228,6 +1448,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMalli("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Mango</Text>
@@ -1243,6 +1468,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMango("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Mushroom</Text>
@@ -1258,6 +1488,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMushroom("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Nuckol</Text>
@@ -1273,6 +1508,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedNuckol("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Onion</Text>
@@ -1288,6 +1528,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedOnion("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Peas</Text>
@@ -1303,6 +1548,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPeas("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Potroot</Text>
@@ -1318,6 +1568,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPotroot("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Paneer</Text>
@@ -1333,6 +1588,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPaneer("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Potato</Text>
@@ -1348,6 +1608,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPotato("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Pumkin</Text>
@@ -1363,6 +1628,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPumkin("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Pudina</Text>
@@ -1378,6 +1648,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPudina("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Radish</Text>
@@ -1393,6 +1668,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedRadish("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Tomato</Text>
@@ -1408,6 +1688,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedTomato("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Tondaikai</Text>
@@ -1423,6 +1708,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedTondaikai("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Vazpoo/Thandu</Text>
@@ -1453,6 +1743,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedYams("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                     </CollapsibleList>
                 </View>
@@ -1478,6 +1773,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedGram("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Channa</Text>
@@ -1508,6 +1808,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedDhaal("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Maida</Text>
@@ -1523,6 +1828,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedMaida("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Oats</Text>
@@ -1538,6 +1848,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedOats("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Ragi</Text>
@@ -1553,6 +1868,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedRagi("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Rice</Text>
@@ -1568,6 +1888,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedRice("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Wheat</Text>
@@ -1583,6 +1908,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedWheat("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Coconut</Text>
@@ -1598,6 +1928,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCoconut("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Oil</Text>
@@ -1613,6 +1948,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedOil("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Garlic</Text>
@@ -1628,6 +1968,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedGarlic("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Ginger</Text>
@@ -1643,6 +1988,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedGinger("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Pepper</Text>
@@ -1658,6 +2008,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedPepper("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Tamarind</Text>
@@ -1673,6 +2028,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedTamarind("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Aginomoto</Text>
@@ -1688,6 +2048,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedAginomoto("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Spices</Text>
@@ -1703,6 +2068,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedSpices("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Coco</Text>
@@ -1718,6 +2088,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCoco("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Horlicks</Text>
@@ -1733,6 +2108,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedHorlicks("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Boost</Text>
@@ -1748,6 +2128,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedBoost("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Nuts</Text>
@@ -1763,6 +2148,11 @@ const AddPatient = ({ navigation, route }) => {
                                 <RadioButton.Item label="MR" value="MR" />
                                 <RadioButton.Item label="HR" value="HR" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedNuts("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                     </CollapsibleList>
                 </View>
@@ -1784,6 +2174,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedRunningNose("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Sneeze</Text>
@@ -1795,6 +2190,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedSneeze("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Cough</Text>
@@ -1806,6 +2206,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedCough("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Wheeze</Text>
@@ -1817,6 +2222,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedWheeze("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Headache</Text>
@@ -1828,6 +2238,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedHeadache("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Itch</Text>
@@ -1839,6 +2254,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedItch("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Swell</Text>
@@ -1850,6 +2270,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedSwell("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Red Rashes</Text>
@@ -1861,6 +2286,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedRedRashes("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
                             <Text style={{ fontSize: 20, marginBottom: 10 }}>Family History</Text>
@@ -1872,6 +2302,11 @@ const AddPatient = ({ navigation, route }) => {
                             >
                                 <RadioButton.Item label="YES" value="YES" />
                             </RadioButton.Group>
+                            <Button onPress={() => setSelectedFamilyHistory("")}>
+                                <Text>
+                                    Clear Choice
+                                </Text>
+                            </Button>
                         </View>
                     </CollapsibleList>
                 </View>
@@ -1914,17 +2349,15 @@ const styles = StyleSheet.create({
     buttons: {
         margin: 20,
         padding: 20,
-        backgroundColor: "#00ffcc",
     },
     button: {
         margin: 20,
         padding: 20,
-        backgroundColor: "#ff6600",
     },
     save: {
         margin: 20,
         padding: 20,
-        backgroundColor: "#00ff00",
+        backgroundColor: "#4afc03",
     },
     cancel: {
         margin: 20,
@@ -1933,7 +2366,6 @@ const styles = StyleSheet.create({
     },
     details: {
         margin: 5,
-        backgroundColor: "#ccff33",
     }
 })
 

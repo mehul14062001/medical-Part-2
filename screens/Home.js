@@ -9,7 +9,7 @@ const Home = ({ navigation, route }) => {
     const { state, dispatch } = useContext(context)
     const { data, loading } = state
     const fetchData = () => {
-        fetch("http://bb09-2409-4070-450e-68b2-f52d-c066-1b10-47da.ngrok.io/")
+        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/")
             .then(res => res.json())
             .then(results => {
                 dispatch({ type: "ADD_DATA", payload: results })

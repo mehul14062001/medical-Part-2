@@ -253,7 +253,7 @@ const Report = (props) => {
 
 
     const resultPatient = () => {
-        fetch("http://bb09-2409-4070-450e-68b2-f52d-c066-1b10-47da.ngrok.io/flask", {
+        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/flask", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -263,7 +263,7 @@ const Report = (props) => {
             })
         })
             .then(user => {
-                Alert.alert(`${downloadingUser.name}, Output report generated`, "OK")
+                Alert.alert("Generate report to see output", "OK")
                 props.navigation.navigate("Home")
             })
 
@@ -272,7 +272,7 @@ const Report = (props) => {
 
 
     const downloadPatient = () => {
-        fetch("http://bb09-2409-4070-450e-68b2-f52d-c066-1b10-47da.ngrok.io/download", {
+        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/download", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -294,7 +294,7 @@ const Report = (props) => {
 
 
     const deletePatient = () => {
-        fetch("http://bb09-2409-4070-450e-68b2-f52d-c066-1b10-47da.ngrok.io/delete", {
+        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/delete", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -446,10 +446,10 @@ const Report = (props) => {
                 </View>
             </View>
             <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-                <Button style={{ backgroundColor: "orange", margin: 10 }} onPress={() => downloadPatient()}>
+                <Button style={{ backgroundColor: "#22d4b3", margin: 10 }} onPress={() => downloadPatient()}>
                     Generate and Mail PDF
                 </Button>
-                <Button style={{ backgroundColor: "cyan", margin: 10 }} onPress={() => {
+                <Button style={{ backgroundColor: "#22d4b3", margin: 10 }} onPress={() => {
                     props.navigation.navigate("AddPatient", {
                         _id, name, phone, email, address, age, gender, housedust, cottondust, aspergilus, pollen, parthenium, cockroach, catdander, dosfur, roaddust, olddust, psdust, milkp, milkc, curd, coffee, tea, beef, chicken, mutton, egg, fisha, fishb, crabs, prawns, shark, avaraikai, banana, beans, beetroot, brinjal, cabbage, capsicum, chillie, cauliflower, carrot, chowchow, corn, cucumber, drumstick, greens, gourds, kovaikai, kothavarai, lfinger, malli, mango, mushroom, nuckol, onion, peas, potroot, paneer, potato, pumkin, pudina, radish, tomato, tondaikai, vazpoo, yams, gram, channa, dhaal, maida, oats, ragi, rice, wheat, coconut, oil, garlic, ginger, pepper, tamarind, aginomoto, spices, coco, horlicks, boost, nuts, runningnose, sneeze, cough, wheeze, headache, itch, swell, redrashes, familyhistory,
                     })
@@ -458,7 +458,7 @@ const Report = (props) => {
                 </Button>
             </View>
             <View>
-                <Button style={{ backgroundColor: "cyan", margin: 10 }} onPress={() => resultPatient()}>
+                <Button style={{ backgroundColor: "#22d4b3", margin: 10 }} onPress={() => resultPatient()}>
                     Predict
                 </Button>
             </View>
