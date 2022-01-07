@@ -25,7 +25,12 @@ mongoose.connection.on('error', (err) => { });
 
 app.post('/flask', function (req, res) {
     const x = req.body.id
-    request({ method: "post", url: 'http://0.0.0.0:5000/predict', json: req.body }, function (error, response, body) {
+    request({
+        method: "post",
+        //url: 'http://0.0.0.0:5000/predict', 
+        url: 'https://medical-flask.herokuapp.com/predict',
+        json: req.body
+    }, function (error, response, body) {
         console.log('body:', body);
     }).pipe(
         fs.createWriteStream(x)).on('close', function (message) {
