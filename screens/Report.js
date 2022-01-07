@@ -253,7 +253,7 @@ const Report = (props) => {
 
 
     const resultPatient = () => {
-        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/flask", {
+        fetch("http://cdec-122-167-196-80.ngrok.io/flask", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -272,7 +272,7 @@ const Report = (props) => {
 
 
     const downloadPatient = () => {
-        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/download", {
+        fetch("http://cdec-122-167-196-80.ngrok.io/download", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -294,7 +294,7 @@ const Report = (props) => {
 
 
     const deletePatient = () => {
-        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/delete", {
+        fetch("http://cdec-122-167-196-80.ngrok.io/delete", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'

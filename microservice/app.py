@@ -59,7 +59,21 @@ def index():
     elif input_dss[-1] == 'Female':
         input_dss[-1] = 'F'
     answer = DSS(input_dss, bpa_data)
-    return answer
+    l = answer.split(';')
+    l_sub = []
+    for i in l:
+        l_sub.append(i.split(':')[-1])
+    l_sub[-1] = l_sub[-1][:-1]
+    print(l_sub)
+    d = {}
+    d['U'] = l_sub[0]
+    d['R'] = l_sub[1]
+    d['O'] = l_sub[2]
+    d['UR'] = l_sub[3]
+    d['UO'] = l_sub[4]
+    d['RO'] = l_sub[5]
+    d['N'] = l_sub[6]
+    return str(d)
 
 if __name__ == "__main__":
 	app.run(host = "0.0.0.0", debug = True)

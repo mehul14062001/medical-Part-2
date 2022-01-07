@@ -165,9 +165,17 @@ app.post('/download', (req, res) => {
             const pdfDocument = require('pdfkit')
             const fs = require('fs')
             const doc = new pdfDocument();
-            const x = fs.readFileSync(`${data._id}`, 'utf8');
+            const y = fs.readFileSync(`${data._id}`, 'utf8');
             doc.pipe(fs.createWriteStream(`../downloads/input_${data.name}_${data._id}.pdf`))
-            { data ? doc.fontSize(10).text(x.concat(JSON.stringify(data)), 100, 120) : doc.fontSize(10).text("Please predict before generating output", 100, 100) }
+            {
+                data ?
+                    doc.fontSize(10).text(data) : doc.fontSize(10).text("Please predict before generating output", 100, 100)
+            }
+            doc.addPage()
+            {
+                y ?
+                    doc.fontSize(10).text(JSON.stringify(y)) : doc.fontSize(10).text("Please predict before generating output", 100, 100)
+            }
             doc.end()
             var nodemailer = require('nodemailer')
             var transporter = nodemailer.createTransport({
@@ -195,7 +203,7 @@ app.post('/download', (req, res) => {
                 if (error) {
                     console.log(error);
                 } else {
-                    console.log('Cool' + info.response);
+                    console.log(info.response);
                 }
             });
             res.send(data);

@@ -221,7 +221,7 @@ const AddPatient = ({ navigation, route }) => {
 
 
     const submitData = () => {
-        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/create", {
+        fetch("http://cdec-122-167-196-80.ngrok.io/create", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -341,7 +341,7 @@ const AddPatient = ({ navigation, route }) => {
     }
 
     const updateData = () => {
-        fetch("http://270e-2409-4070-4d80-f776-184d-7d70-a090-3bc5.ngrok.io/update", {
+        fetch("http://cdec-122-167-196-80.ngrok.io/update", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -547,11 +547,12 @@ const AddPatient = ({ navigation, route }) => {
                                 }
                                 value={selectedHouseDust}
                             >
-
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedHouseDust("")}>
                                 <Text>
@@ -568,10 +569,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCottonDust}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCottonDust("")}>
                                 <Text>
@@ -588,10 +591,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedAspergilus}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedAspergilus("")}>
                                 <Text>
@@ -608,10 +613,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPollen}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPollen("")}>
                                 <Text>
@@ -628,10 +635,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedParthenium}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedParthenium("")}>
                                 <Text>
@@ -648,10 +657,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCockroach}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCockroach("")}>
                                 <Text>
@@ -668,10 +679,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCatdander}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCatdander("")}>
                                 <Text>
@@ -688,10 +701,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedDosfur}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedDosfur("")}>
                                 <Text>
@@ -708,10 +723,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedRoadDust}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedRoadDust("")}>
                                 <Text>
@@ -728,10 +745,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedOldDust}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedOldDust("")}>
                                 <Text>
@@ -748,10 +767,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPSDust}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPSDust("")}>
                                 <Text>
@@ -778,10 +799,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMilkP}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMilkP("")}>
                                 <Text>
@@ -798,10 +821,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMilkC}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMilkC("")}>
                                 <Text>
@@ -818,10 +843,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCurd}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCurd("")}>
                                 <Text>
@@ -838,10 +865,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCoffee}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCoffee("")}>
                                 <Text>
@@ -858,10 +887,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedTea}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedTea("")}>
                                 <Text>
@@ -878,10 +909,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedBeef}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedBeef("")}>
                                 <Text>
@@ -898,10 +931,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedChicken}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedChicken("")}>
                                 <Text>
@@ -918,10 +953,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMutton}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMutton("")}>
                                 <Text>
@@ -938,10 +975,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedEgg}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedEgg("")}>
                                 <Text>
@@ -958,10 +997,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedFishA}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedFishA("")}>
                                 <Text>
@@ -978,10 +1019,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedFishB}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedFishB("")}>
                                 <Text>
@@ -998,10 +1041,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCrabs}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
@@ -1013,10 +1058,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPrawns}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPrawns("")}>
                                 <Text>
@@ -1033,10 +1080,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedShark}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedShark("")}>
                                 <Text>
@@ -1063,10 +1112,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedAvaraikai}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedAvaraikai("")}>
                                 <Text>
@@ -1083,10 +1134,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedBanana}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedBanana("")}>
                                 <Text>
@@ -1103,10 +1156,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedBeans}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedBeans("")}>
                                 <Text>
@@ -1123,10 +1178,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedBeetroot}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedBeetroot("")}>
                                 <Text>
@@ -1143,10 +1200,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedBrinjal}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedBrinjal("")}>
                                 <Text>
@@ -1163,10 +1222,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCabbage}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCabbage("")}>
                                 <Text>
@@ -1183,10 +1244,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCapsicum}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCapsicum("")}>
                                 <Text>
@@ -1203,10 +1266,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedChillie}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedChillie("")}>
                                 <Text>
@@ -1223,10 +1288,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCauliflower}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCauliflower("")}>
                                 <Text>
@@ -1243,10 +1310,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCarrot}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCarrot("")}>
                                 <Text>
@@ -1263,10 +1332,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedChowchow}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedChowchow("")}>
                                 <Text>
@@ -1283,10 +1354,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCorn}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCorn("")}>
                                 <Text>
@@ -1303,10 +1376,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCucumber}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCucumber("")}>
                                 <Text>
@@ -1323,10 +1398,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedDrumstick}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedDrumstick("")}>
                                 <Text>
@@ -1343,10 +1420,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedGreens}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedGreens("")}>
                                 <Text>
@@ -1363,10 +1442,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedGourds}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedGourds("")}>
                                 <Text>
@@ -1383,10 +1464,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedKovaikai}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedKovaikai("")}>
                                 <Text>
@@ -1403,10 +1486,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedKothavarai}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedKothavarai("")}>
                                 <Text>
@@ -1423,10 +1508,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedLfinger}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedLfinger("")}>
                                 <Text>
@@ -1443,10 +1530,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMalli}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMalli("")}>
                                 <Text>
@@ -1463,10 +1552,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMango}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMango("")}>
                                 <Text>
@@ -1483,10 +1574,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMushroom}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMushroom("")}>
                                 <Text>
@@ -1503,10 +1596,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedNuckol}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedNuckol("")}>
                                 <Text>
@@ -1523,10 +1618,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedOnion}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedOnion("")}>
                                 <Text>
@@ -1543,10 +1640,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPeas}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPeas("")}>
                                 <Text>
@@ -1563,10 +1662,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPotroot}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPotroot("")}>
                                 <Text>
@@ -1583,10 +1684,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPaneer}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPaneer("")}>
                                 <Text>
@@ -1603,10 +1706,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPotato}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPotato("")}>
                                 <Text>
@@ -1623,10 +1728,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPumkin}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPumkin("")}>
                                 <Text>
@@ -1643,10 +1750,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPudina}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPudina("")}>
                                 <Text>
@@ -1663,10 +1772,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedRadish}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedRadish("")}>
                                 <Text>
@@ -1683,10 +1794,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedTomato}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedTomato("")}>
                                 <Text>
@@ -1703,10 +1816,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedTondaikai}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedTondaikai("")}>
                                 <Text>
@@ -1723,10 +1838,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedVazpoo}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
@@ -1738,10 +1855,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedYams}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedYams("")}>
                                 <Text>
@@ -1768,10 +1887,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedGram}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedGram("")}>
                                 <Text>
@@ -1788,10 +1909,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedChanna}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
@@ -1803,10 +1926,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedDhaal}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedDhaal("")}>
                                 <Text>
@@ -1823,10 +1948,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedMaida}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedMaida("")}>
                                 <Text>
@@ -1843,10 +1970,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedOats}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedOats("")}>
                                 <Text>
@@ -1863,10 +1992,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedRagi}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedRagi("")}>
                                 <Text>
@@ -1883,10 +2014,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedRice}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedRice("")}>
                                 <Text>
@@ -1903,10 +2036,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedWheat}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedWheat("")}>
                                 <Text>
@@ -1923,10 +2058,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCoconut}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCoconut("")}>
                                 <Text>
@@ -1943,10 +2080,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedOil}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedOil("")}>
                                 <Text>
@@ -1963,10 +2102,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedGarlic}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedGarlic("")}>
                                 <Text>
@@ -1983,10 +2124,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedGinger}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedGinger("")}>
                                 <Text>
@@ -2003,10 +2146,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedPepper}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedPepper("")}>
                                 <Text>
@@ -2023,10 +2168,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedTamarind}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedTamarind("")}>
                                 <Text>
@@ -2043,10 +2190,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedAginomoto}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedAginomoto("")}>
                                 <Text>
@@ -2063,10 +2212,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedSpices}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedSpices("")}>
                                 <Text>
@@ -2083,10 +2234,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedCoco}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedCoco("")}>
                                 <Text>
@@ -2103,10 +2256,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedHorlicks}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedHorlicks("")}>
                                 <Text>
@@ -2123,10 +2278,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedBoost}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedBoost("")}>
                                 <Text>
@@ -2143,10 +2300,12 @@ const AddPatient = ({ navigation, route }) => {
                                 value={selectedNuts}
                             >
 
-                                <RadioButton.Item label="NR" value="NR" />
-                                <RadioButton.Item label="LR" value="LR" />
-                                <RadioButton.Item label="MR" value="MR" />
-                                <RadioButton.Item label="HR" value="HR" />
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <RadioButton.Item value="NR" />
+                                    <RadioButton.Item value="LR" uncheckedColor='green' />
+                                    <RadioButton.Item value="MR" uncheckedColor='orange' />
+                                    <RadioButton.Item value="HR" uncheckedColor='red' />
+                                </View>
                             </RadioButton.Group>
                             <Button onPress={() => setSelectedNuts("")}>
                                 <Text>
