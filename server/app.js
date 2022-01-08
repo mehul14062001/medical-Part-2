@@ -27,8 +27,8 @@ app.post('/flask', function (req, res) {
     const x = req.body.id
     request({
         method: "post",
-        //url: 'http://0.0.0.0:5000/predict', 
-        url: 'https://medical-flask.herokuapp.com/predict',
+        //url: 'http://0.0.0.0:5000/predict',
+        url: 'https://intense-forest-53481.herokuapp.com/predict',
         json: req.body
     }, function (error, response, body) {
         console.log('body:', body);
@@ -171,7 +171,7 @@ app.post('/download', (req, res) => {
             const fs = require('fs')
             const doc = new pdfDocument();
             const y = fs.readFileSync(`${data._id}`, 'utf8');
-            doc.pipe(fs.createWriteStream(`../downloads/input_${data.name}_${data._id}.pdf`))
+            doc.pipe(fs.createWriteStream(`./downloads/input_${data.name}_${data._id}.pdf`))
             {
                 data ?
                     doc.fontSize(10).text(data) : doc.fontSize(10).text("Please predict before generating output", 100, 100)
@@ -187,7 +187,7 @@ app.post('/download', (req, res) => {
                 service: 'gmail',
                 auth: {
                     user: 'clinicbphc864@gmail.com',
-                    pass: 'bphc@1234'
+                    pass: 'medicalnode'
                 }
             })
             var mailoptions = {
@@ -199,7 +199,7 @@ app.post('/download', (req, res) => {
                 attachments: [
                     {
                         filename: `input_${data.name}_${data._id}.pdf`,
-                        path: `../downloads/input_${data.name}_${data._id}.pdf`,
+                        path: `./downloads/input_${data.name}_${data._id}.pdf`,
                     },
                 ],
             };
@@ -337,6 +337,6 @@ app.post('/delete', (req, res) => {
         .catch((err) => { });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
 
 });

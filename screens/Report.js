@@ -253,7 +253,7 @@ const Report = (props) => {
 
 
     const resultPatient = () => {
-        fetch("http://cdec-122-167-196-80.ngrok.io/flask", {
+        fetch("https://desolate-sands-75938.herokuapp.com/flask", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -272,7 +272,7 @@ const Report = (props) => {
 
 
     const downloadPatient = () => {
-        fetch("http://cdec-122-167-196-80.ngrok.io/download", {
+        fetch("https://desolate-sands-75938.herokuapp.com/download", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -294,7 +294,7 @@ const Report = (props) => {
 
 
     const deletePatient = () => {
-        fetch("http://cdec-122-167-196-80.ngrok.io/delete", {
+        fetch("https://desolate-sands-75938.herokuapp.com/delete", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'

@@ -221,7 +221,7 @@ const AddPatient = ({ navigation, route }) => {
 
 
     const submitData = () => {
-        fetch("http://cdec-122-167-196-80.ngrok.io/create", {
+        fetch("https://desolate-sands-75938.herokuapp.com/create", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -341,7 +341,7 @@ const AddPatient = ({ navigation, route }) => {
     }
 
     const updateData = () => {
-        fetch("http://cdec-122-167-196-80.ngrok.io/update", {
+        fetch("https://desolate-sands-75938.herokuapp.com/update", {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -540,7 +540,7 @@ const AddPatient = ({ navigation, route }) => {
                         buttonContent={<Button><Text>List</Text></Button>}
                     >
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>House Dust</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>House Dust: {selectedHouseDust}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedHouseDust(itemValue)
@@ -561,7 +561,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cotton Dust</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cotton Dust: {selectedCottonDust}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCottonDust(itemValue)
@@ -583,7 +583,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Aspergilus</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Aspergilus: {selectedAspergilus}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedAspergilus(itemValue)
@@ -605,7 +605,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pollen</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pollen: {selectedPollen}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPollen(itemValue)
@@ -627,7 +627,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Parthenium</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Parthenium: {selectedParthenium}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedParthenium(itemValue)
@@ -649,7 +649,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cockroach</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cockroach: {selectedCockroach}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCockroach(itemValue)
@@ -671,7 +671,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Catdander</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Catdander: {selectedCatdander}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCatdander(itemValue)
@@ -693,7 +693,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Dosfur</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Dosfur: {selectedDosfur}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedDosfur(itemValue)
@@ -715,7 +715,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Road Dust</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Road Dust: {selectedRoadDust}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedRoadDust(itemValue)
@@ -737,7 +737,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Old Dust</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Old Dust: {selectedOldDust}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedOldDust(itemValue)
@@ -759,7 +759,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>PS Dust</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>PS Dust: {selectedPSDust}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPSDust(itemValue)
@@ -791,7 +791,7 @@ const AddPatient = ({ navigation, route }) => {
                         buttonContent={<Button><Text>List</Text></Button>}
                     >
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>MilkP</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>MilkP: {selectedMilkP}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMilkP(itemValue)
@@ -813,7 +813,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>MilkC</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>MilkC: {selectedMilkC}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMilkC(itemValue)
@@ -835,7 +835,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Curd</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Curd: {selectedCurd}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCurd(itemValue)
@@ -857,7 +857,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Coffee</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Coffee: {selectedCoffee}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCoffee(itemValue)
@@ -879,7 +879,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tea</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tea: {selectedTea}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedTea(itemValue)
@@ -901,7 +901,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Beef</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Beef: {selectedBeef}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedBeef(itemValue)
@@ -923,7 +923,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Chicken</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Chicken: {selectedChicken}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedChicken(itemValue)
@@ -945,7 +945,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Mutton</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Mutton: {selectedMutton}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMutton(itemValue)
@@ -967,7 +967,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Egg</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Egg: {selectedEgg}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedEgg(itemValue)
@@ -989,7 +989,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>FishA</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>FishA: {selectedFishA}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedFishA(itemValue)
@@ -1011,7 +1011,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>FishB</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>FishB: {selectedFishB}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedFishB(itemValue)
@@ -1033,7 +1033,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Crabs</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Crabs: {selectedCrabs}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCrabs(itemValue)
@@ -1050,7 +1050,7 @@ const AddPatient = ({ navigation, route }) => {
                             </RadioButton.Group>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Prawns</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Prawns: {selectedPrawns}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPrawns(itemValue)
@@ -1072,7 +1072,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Shark</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Shark: {selectedShark}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedShark(itemValue)
@@ -1104,7 +1104,7 @@ const AddPatient = ({ navigation, route }) => {
                         buttonContent={<Button><Text>List</Text></Button>}
                     >
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Avaraikai</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Avaraikai: {selectedAvaraikai}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedAvaraikai(itemValue)
@@ -1126,7 +1126,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Banana</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Banana: {selectedBanana}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedBanana(itemValue)
@@ -1148,7 +1148,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Beans</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Beans: {selectedBeans}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedBeans(itemValue)
@@ -1170,7 +1170,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Beetroot</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Beetroot: {selectedBeetroot}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedBeetroot(itemValue)
@@ -1192,7 +1192,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Brinjal</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Brinjal: {selectedBrinjal}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedBrinjal(itemValue)
@@ -1214,7 +1214,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cabbage</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cabbage: {selectedCabbage}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCabbage(itemValue)
@@ -1236,7 +1236,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Capsicum</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Capsicum: {selectedCapsicum}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCapsicum(itemValue)
@@ -1258,7 +1258,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Chillie</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Chillie: {selectedChillie}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedChillie(itemValue)
@@ -1280,7 +1280,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cauliflower</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cauliflower: {selectedCauliflower}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCauliflower(itemValue)
@@ -1302,7 +1302,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Carrot</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Carrot: {selectedCauliflower}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCarrot(itemValue)
@@ -1324,7 +1324,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Chow Chow</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Chow Chow: {selectedChowchow}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedChowchow(itemValue)
@@ -1346,7 +1346,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Corn</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Corn: {selectedCorn}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCorn(itemValue)
@@ -1368,7 +1368,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cucumber</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Cucumber: {selectedCucumber}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCucumber(itemValue)
@@ -1390,7 +1390,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Drumstick</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Drumstick: {selectedDrumstick}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedDrumstick(itemValue)
@@ -1412,7 +1412,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Greens</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Greens: {selectedGreens}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedGreens(itemValue)
@@ -1434,7 +1434,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Gourds</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Gourds: {selectedGourds}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedGourds(itemValue)
@@ -1456,7 +1456,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Kovaikai</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Kovaikai: {selectedKovaikai}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedKovaikai(itemValue)
@@ -1478,7 +1478,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Kothavarai</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Kothavarai: {selectedKothavarai}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedKothavarai(itemValue)
@@ -1500,7 +1500,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Ladies Finger</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Ladies Finger: {selectedLfinger}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedLfinger(itemValue)
@@ -1522,7 +1522,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Malli</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Malli: {selectedMalli}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMalli(itemValue)
@@ -1544,7 +1544,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Mango</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Mango: {selectedMango}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMango(itemValue)
@@ -1566,7 +1566,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Mushroom</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Mushroom: {selectedMushroom}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMushroom(itemValue)
@@ -1588,7 +1588,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Nuckol</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Nuckol: {selectedNuckol}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedNuckol(itemValue)
@@ -1610,7 +1610,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Onion</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Onion: {selectedOnion}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedOnion(itemValue)
@@ -1632,7 +1632,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Peas</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Peas: {selectedPeas}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPeas(itemValue)
@@ -1654,7 +1654,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Potroot</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Potroot: {selectedPotroot}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPotroot(itemValue)
@@ -1676,7 +1676,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Paneer</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Paneer: {selectedPaneer}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPaneer(itemValue)
@@ -1698,7 +1698,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Potato</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Potato: {selectedPotato}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPotato(itemValue)
@@ -1720,7 +1720,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pumkin</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pumkin: {selectedPumkin}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPumkin(itemValue)
@@ -1742,7 +1742,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pudina</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pudina: {selectedPudina}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPudina(itemValue)
@@ -1764,7 +1764,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Radish</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Radish: {selectedRadish}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedRadish(itemValue)
@@ -1786,7 +1786,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tomato</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tomato: {selectedTomato}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedTomato(itemValue)
@@ -1808,7 +1808,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tondaikai</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tondaikai: {selectedTondaikai}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedTondaikai(itemValue)
@@ -1830,7 +1830,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Vazpoo/Thandu</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Vazpoo/Thandu: {selectedVazpoo}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedVazpoo(itemValue)
@@ -1847,7 +1847,7 @@ const AddPatient = ({ navigation, route }) => {
                             </RadioButton.Group>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Yams</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Yams: {selectedYams}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedYams(itemValue)
@@ -1879,7 +1879,7 @@ const AddPatient = ({ navigation, route }) => {
                         buttonContent={<Button><Text>List</Text></Button>}
                     >
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Gram</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Gram: {selectedGram}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedGram(itemValue)
@@ -1901,7 +1901,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Channa</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Channa: {selectedChanna}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedChanna(itemValue)
@@ -1918,7 +1918,7 @@ const AddPatient = ({ navigation, route }) => {
                             </RadioButton.Group>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Dhaal</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Dhaal: {selectedDhaal}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedDhaal(itemValue)
@@ -1940,7 +1940,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Maida</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Maida: {selectedMaida}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedMaida(itemValue)
@@ -1962,7 +1962,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Oats</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Oats: {selectedOats}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedOats(itemValue)
@@ -1984,7 +1984,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Ragi</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Ragi: {selectedRagi}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedRagi(itemValue)
@@ -2006,7 +2006,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Rice</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Rice: {selectedRice}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedRice(itemValue)
@@ -2028,7 +2028,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Wheat</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Wheat: {selectedWheat}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedWheat(itemValue)
@@ -2050,7 +2050,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Coconut</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Coconut: {selectedCoconut}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCoconut(itemValue)
@@ -2072,7 +2072,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Oil</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Oil: {selectedOil}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedOil(itemValue)
@@ -2094,7 +2094,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Garlic</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Garlic: {selectedGarlic}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedGarlic(itemValue)
@@ -2116,7 +2116,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Ginger</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Ginger: {selectedGinger}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedGinger(itemValue)
@@ -2138,7 +2138,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pepper</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Pepper: {selectedPepper}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedPepper(itemValue)
@@ -2160,7 +2160,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tamarind</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Tamarind: {selectedTamarind}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedTamarind(itemValue)
@@ -2182,7 +2182,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Aginomoto</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Aginomoto: {selectedAginomoto}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedAginomoto(itemValue)
@@ -2204,7 +2204,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Spices</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Spices: {selectedSpices}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedSpices(itemValue)
@@ -2226,7 +2226,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Coco</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Coco: {selectedCoco}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedCoco(itemValue)
@@ -2248,7 +2248,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Horlicks</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Horlicks: {selectedHorlicks}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedHorlicks(itemValue)
@@ -2270,7 +2270,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Boost</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Boost: {selectedBoost}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedBoost(itemValue)
@@ -2292,7 +2292,7 @@ const AddPatient = ({ navigation, route }) => {
                             </Button>
                         </View>
                         <View style={{ margin: 10, borderColor: "#abcdef", borderWidth: 3 }}>
-                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Nuts</Text>
+                            <Text style={{ fontSize: 20, marginBottom: 10 }}>Nuts: {selectedNuts}</Text>
                             <RadioButton.Group
                                 onValueChange={itemValue =>
                                     setSelectedNuts(itemValue)

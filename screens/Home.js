@@ -9,7 +9,7 @@ const Home = ({ navigation, route }) => {
     const { state, dispatch } = useContext(context)
     const { data, loading } = state
     const fetchData = () => {
-        fetch("http://cdec-122-167-196-80.ngrok.io/")
+        fetch("https://desolate-sands-75938.herokuapp.com/")
             .then(res => res.json())
             .then(results => {
                 dispatch({ type: "ADD_DATA", payload: results })
